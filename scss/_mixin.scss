@@ -1,0 +1,15 @@
+@mixin display ($size, $line ) {
+    font-size: $size;
+    font-family: DM Serif Display;
+    line-height: $line;
+    letter-spacing: 0.22px;
+    color: #292F36;
+}
+
+@mixin jost ($size, $line, $spacing ) {
+    color: #4D5053;
+    font-size: $size;
+    font-family: Jost;
+    line-height: $line;
+    letter-spacing: $spacing;
+}

@@ -1,0 +1,73 @@
+.design {
+    margin-top: 175px;
+    margin-bottom: 50px;
+
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 1s;
+        width: 32%;
+    }
+
+    &__card:hover &__title {
+        color: #CDA274;
+        transform: scale(1.1);
+
+    }
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        color: #292F36;
+        text-align: center;
+        font-size: 25px;
+        font-family: DM Serif Display;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 39px;
+        letter-spacing: 0.22px;
+        transition: 1s;
+    }
+
+
+    &__description {
+        max-width: 317px;
+        margin-top: 17px;
+        color: #4D5053;
+        text-align: center;
+        font-size: 22px;
+        font-family: Jost;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 33px;
+        letter-spacing: 0.22px;
+    }
+
+    &__span {
+        display: flex;
+        justify-content: center;
+        margin-top: 68px;
+        color: #4D5053;
+        text-align: center;
+        font-size: 18px;
+        font-family: Jost;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0.36px;
+        gap: 6px;
+    }
+
+
+
+}

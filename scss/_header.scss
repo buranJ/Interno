@@ -1,0 +1,26 @@
+.header{
+    
+    margin-top: 26px;
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__nav{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+    &__link{
+        transition: 1s;
+        @include jost(19px,30px,0.4px);
+        
+    }
+    &__link:hover{
+        color: #CDA274;
+    }
+}
+.burger{
+    display: none;
+    z-index: 5;
+}

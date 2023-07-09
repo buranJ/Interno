@@ -1,0 +1,75 @@
+.last {
+    &__card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 70px;
+        background: #292F36;
+        height: 414px;
+        transition: 1s;
+    }
+
+    &__card:hover {
+        background-color: #CDA274;
+        transform: scale(1.1);
+    }
+    &__title {
+        @include display(50px, 75px);
+        color: #FFF;
+        text-align: center;
+        transition: 1s;
+    }
+
+    &__card:hover &__title {
+        color: #292F36;
+    }
+
+
+
+    &__description {
+    
+        margin-top: 9px;
+        color: #FFF;
+        text-align: center;
+        font-size: 22px;
+        font-family: Jost;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 33px;
+        letter-spacing: 0.22px;
+        transition: 1s;
+    }
+
+    &__card:hover &__description {
+        color: #292F36;
+    }
+
+
+    &__btn {
+        color: #FFF;
+        text-align: center;
+        font-size: 18px;
+        font-family: Jost;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0.22px;
+        border-radius: 18px;
+        border: 2px solid #CDA274;
+        background: #CDA274;
+        box-shadow: 1px 0px 18px 0px rgba(0, 0, 0, 0.20);
+        gap: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 31px;
+        transition: 1s;
+        padding: 21px 31px;
+    }
+
+    &__card:hover &__btn {
+        background-color: #292F36;
+    }
+
+}

@@ -1,0 +1,99 @@
+.people {
+    margin-top: 140px;
+
+    .container {
+        min-height: 675px;
+        border-radius: 70px;
+        background: #F4F0EC;
+    }
+
+    &__top {
+
+        padding-top: 107px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__top-title {
+        @include display(45px, 58px);
+        text-align: center;
+        max-width: 479px;
+
+    }
+
+    &__content {
+        padding-bottom: 60px;
+        margin-top: 47px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 18px;
+        justify-content: center;
+
+    }
+
+    &__wrap {
+        display: flex;
+        justify-content: start;
+        gap: 20px;
+        align-items: center;
+        padding: 55px 70px 25px 35px;
+    }
+
+    &__card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 30px;
+        background: #FFF;
+        width: 354px;
+        height: 287px;
+        transition: 1s;
+    }
+
+    &__card:hover &__description {
+        color: #CDA274;
+    }
+
+    &__card:hover {
+        transform: scale(1.1);
+    }
+
+
+    &__title {
+        color: #292F36;
+        font-size: 25px;
+        font-family: DM Serif Display;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 37.5px;
+        letter-spacing: 0.22px;
+        max-width: 479px;
+    }
+
+    &__title:last-child {
+        color: #4D5053;
+        font-size: 18px;
+        font-family: Jost;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0.22px;
+    }
+
+    &__description {
+        color: #4D5053;
+        font-size: 20px;
+        font-family: Jost;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.22px;
+        max-width: 244px;
+        padding: 0px 65px 45px 35px;
+    }
+
+}

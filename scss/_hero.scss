@@ -1,0 +1,51 @@
+.hero {
+    background: url('../imgs/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0px 0px 0px 290px;
+    background-position: center;
+    height: 831px;
+    margin-top: 30px;
+
+    &__content {
+        padding-top: 188px;
+    }
+
+    &__title {
+        max-width: 595px;
+        @include display(80px, 96px);
+        transition: 1s;
+    }
+
+    &__title:hover {
+        transform: scale(1.1);
+        color: #CDA274;
+    }
+
+
+    &__description {
+        margin-top: 19px;
+        max-width: 577px;
+        @include jost(22px, 33px, 0.22px);
+    }
+
+    &__btn {
+        margin-top: 35px;
+        border-radius: 18px;
+        border: 2px solid #292F36;
+        background: #292F36;
+        padding: 22px 21px 22px 34px;
+        display: flex;
+        align-items: center;
+        gap: 21px;
+        @include jost(18px, 27px, 0.72px);
+        color: #FFF;
+        transition: 1s;
+    }
+
+    &__btn:hover {
+        gap: 34px;
+        cursor: pointer;
+        color: #CDA274;
+    }
+}

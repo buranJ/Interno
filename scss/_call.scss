@@ -1,0 +1,93 @@
+.call {
+    margin-top: 150px;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    &__title {
+        max-width: 450px;
+        @include display(50px, 65px);
+        transition: 1s;
+    }
+
+    &__description {
+        margin-top: 42px;
+        max-width: 531px;
+        @include jost(22px, 33px, 0.22px);
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+        gap: 20px;
+    }
+
+    &__bottom-right-number {
+        color: #4D5053;
+        font-size: 24px;
+        font-family: Jost;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 0.22px;
+    }
+
+    &__bottom-right-call-us {
+        color: #4D5053;
+        font-size: 22px;
+        font-family: Jost;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 33px;
+        letter-spacing: 0.22px;
+    }
+
+    &__btn {
+        display: flex;
+        margin-top: 50px;
+        border-radius: 18px;
+        border: 2px solid #292F36;
+        background: #292F36;
+        align-items: center;
+        color: #FFF;
+        font-size: 18px;
+        font-family: Jost;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0.72px;
+        padding: 16px;
+        transition: 1s;
+        gap: 20px;
+    }
+
+    &__right {
+        transition: 1s;
+    }
+
+    &__btn:hover {
+        gap: 35px;
+        cursor: pointer;
+        color: #CDA274;
+
+    }
+
+    &__content {
+        transition: 1s;
+    }
+
+    &__content:hover &__right {
+        transform: scale(1.1);
+    }
+
+    &__content:hover &__title {
+        transform: scale(1.1);
+        color: #CDA274;
+    }
+
+
+}

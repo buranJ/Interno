@@ -1,0 +1,256 @@
+@media (max-width:1220px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .people {
+        &__card {
+            width: 48%;
+        }
+
+        &__card:last-child {
+            width: 96%;
+        }
+    }
+
+    //proba
+    .proba {
+
+        &__content {
+            // 1200px
+            flex-wrap: wrap;
+        }
+
+        &__card {
+            // 580px
+            width: 48%;
+        }
+
+        &__wrap {
+            // 540px
+            width: 93%;
+
+            img {
+                // 540px
+                width: 100%;
+            }
+        }
+    }
+
+    .footer {
+        &__content {
+            padding: 0 15px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+    }
+
+
+}
+
+
+
+
+@media (max-width:1024px) {
+
+    //disign
+    .design {
+        &__content {
+            flex-wrap: wrap;
+            row-gap: 20px;
+        }
+
+        &__card {
+            width: 48%;
+        }
+
+    }
+
+
+    // call
+    .call {
+        &__content {
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+            align-items: center;
+            row-gap: 20px;
+        }
+
+        &__right {
+            max-width: 692px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    //brand
+    .brand {
+        &__imgs {
+            justify-content: space-around;
+        }
+    }
+
+    //proba
+    .proba {
+        &__card {
+            width: 98%;
+
+
+        }
+
+        &__imgs {
+            img {
+                object-fit: cover;
+            }
+        }
+
+        &__card-title {
+            max-width: 100%;
+        }
+    }
+
+
+}
+
+@media (max-width:850px) {
+    .result {
+        &__content {
+            flex-wrap: wrap;
+        }
+
+        &__card {
+            width: 48%;
+        }
+    }
+}
+
+@media (max-width:768px) {
+
+    //heder
+    .header__nav {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    // hero
+    .hero {
+        &__title {
+            font-size: 60px;
+            line-height: 75px;
+        }
+
+        &__description {
+            font-size: 24px;
+        }
+    }
+
+    //people
+    .people {
+        &__card {
+            width: 96%;
+        }
+    }
+
+}
+
+@media (max-width:685px) {
+
+    //disign
+    .design {
+        &__card {
+            padding-bottom: 8px;
+            border-bottom: 1px solid black;
+            width: 98%;
+        }
+    }
+
+    .recent {
+        &__content {
+            justify-content: center;
+        }
+
+        &__card {
+            width: 96%;
+        }
+
+    }
+
+    .last {
+        &__title {
+            @include display(36px, 45px);
+            color: #FFF;
+        }
+    }
+}
+
+@media (max-width:500px) {
+
+    //hero
+    .hero {
+        &__title {
+            font-size: 42px;
+        }
+    }
+
+    // call
+    .call {
+        &__title {
+            font-size: 36px;
+        }
+
+        &__description {
+            font-size: 20px;
+        }
+    }
+
+    .result {
+        &__card {
+            border-right: none;
+            padding-bottom: 15px;
+            border-bottom: solid 1px rgba(205, 162, 116, 1);
+            width: 96%;
+        }
+    }
+
+    //proba
+    .proba {
+        &__wrap {
+            padding: 21px 21px 40px 10px;
+        }
+    }
+}
+
+@media (max-width:400px) {
+    .people {
+        &__title {
+            font-size: 20px;
+        }
+    }
+
+    .recent {
+        &__text-title {
+            font-size: 20px;
+        }
+    }
+
+    .last {
+        &__btn {
+            padding: 14px 21px;
+        }
+
+        &__description {
+            max-width: 240px;
+        }
+    }
+    .finish{
+        &__text{
+            line-height: 30px;
+        }
+    }
+}

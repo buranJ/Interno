@@ -1,0 +1,47 @@
+.result {
+    background-color: rgba(244, 240, 236, 1);
+    padding-top: 140px;
+    padding-bottom: 140px;
+    margin-bottom: 200px;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+    }
+
+    &__card {
+        border-right: 1px solid rgba(205, 162, 116, 1);
+        width: 24%;
+        height: 195px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: 1s;
+    }
+    &__card:hover &__wrap{
+        transform: scale(1.1);
+    }
+    &__card:hover &__title{
+        color: chocolate;
+    }
+
+
+    &__wrap{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__card:last-child {
+        border: 0;
+    }
+    &__title{
+        @include display(85px, 128px);
+        color: #CDA274;
+    }
+    &__description{
+        @include jost(22px, 33px, 0.22px)
+    }
+}
